@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button class="navbar-toggler" data-toggle="open-navbar1">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a href="#">
+                    <h4>Thennavan</h4>
+                </a>
+                
+            </div>
+
+            <div class="navbar-menu" id="open-navbar1">
+                <ul class="navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li class="navbar-dropdown">
+                        <a href="#" class="dropdown-toggler" data-dropdown="my-dropdown-id">
+                            Projects<i class="fa fa-angle-down"></i>
+                        </a>
+                    </li>
+                    <li class="navbar-dropdown">
+                        <a href="#" class="dropdown-toggler" data-dropdown="blog">
+                            Blog <i class="fa fa-angle-down"></i>
+                        </a>
+                    </li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="theme-toggle">
+            <button id="theme-toggle-btn"></button>
+        </div>
+    </nav>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
