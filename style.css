@@ -444,3 +444,26 @@ body.dark-mode {
         background-color: #f9f9f9;
     }
 }
+
+/* animation*/
+
+
+.animation-container {
+  display: flex;
+  justify-content: flex-start;  
+  align-items: center;
+  padding: 2rem; 
+}
+
+.animation-container .lottie-wrapper {
+  width: 500px; 
+  height: 500px; 
+  margin-right: 1rem; 
+}
+
+.animation-container p {
+  margin: 0;
+  font-size: 60px; 
+  margin-left: 300px; 
+}
+
