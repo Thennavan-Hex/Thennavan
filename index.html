@@ -1,60 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Thennavan - College Student in VCET, Developer"
+    />
+    <title>Thennavan</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Thennavan - College Student in VCET, Developer">
-    <title>Home | Thennavan</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-
-<body>
+  <body>
     <nav class="navbar">
-        <div class="container">
-            <div class="navbar-header">
-                <button class="navbar-toggler" data-toggle="open-navbar1">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <a href="#">
-                    <h4>Thennavan</h4>
-                </a>
-            </div>
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggler" data-toggle="open-navbar1">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <a href="#">
+            <h4>Thennavan</h4>
+          </a>
+        </div>
 
-            <div class="navbar-menu" id="open-navbar1">
-                <ul class="navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li class="navbar-dropdown">
-                        <a href="#" class="dropdown-toggler" data-dropdown="my-dropdown-id">
-                            Projects<i class="fa fa-angle-down"></i>
-                        </a>
-                    </li>
-                    <li class="navbar-dropdown">
-                        <a href="#" class="dropdown-toggler" data-dropdown="blog">
-                            Blog <i class="fa fa-angle-down"></i>
-                        </a>
-                    </li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
+        <div class="navbar-menu" id="open-navbar1">
+          <ul class="navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li class="navbar-dropdown">
+              <a
+                href="#"
+                class="dropdown-toggler"
+                data-dropdown="my-dropdown-id"
+              >
+                Projects<i class="fa fa-angle-down"></i>
+              </a>
+            </li>
+            <li class="navbar-dropdown">
+              <a href="#" class="dropdown-toggler" data-dropdown="blog">
+                Blog <i class="fa fa-angle-down"></i>
+              </a>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
         </div>
-        <div class="theme-toggle">
-            <button id="theme-toggle-btn"></button>
-        </div>
+      </div>
+      <div class="theme-toggle">
+        <button id="theme-toggle-btn"></button>
+      </div>
     </nav>
     <!-- animation -->
     <div class="animation-container">
-        <div class="lottie-wrapper">
-            <div id="lottie-animation"></div>
-        </div>
-        <p>Hi, I am a Thennavan</p>
+      <div class="lottie-wrapper">
+        <div id="lottie-animation"></div>
+      </div>
+      <p class="name-p">Hi, I am Thennavan</p><br>
+      <P class="name-p-down">
+        <span is="type-async" id="type-text">...</span>
+        <span class="blinking-cursor">_</span>
+      </P>
+    </div>
+    <div class="animation-container">
+      <!-- First animation code here -->
     </div>
 
+    <div class="white-bg-container">
+      <div class="project-text">Project</div>
+      <div class="white-bg-animation" id="second-animation"></div>
+      <p>This project aims to revolutionize the way people interact with technology. Through innovative design and cutting-edge technology, we're creating an immersive experience that will redefine user engagement.</p>
+      <button class="explore-button">Explore</button>
+       </div>
+    
+  </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
     <script src="./script.js"></script>
-</body>
-
+  </body>
 </html>
