@@ -625,3 +625,26 @@ body.dark-mode {
   opacity: 1;
   right: 15px;
 }
+
+/* Sticky navbar */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.sticky + .content {
+  padding-top: 80px; 
+}
+
+
+@media screen and (max-width: 768px) {
+  /* Adjust the breakpoint value as needed */
+
+  /* Reduce the font size and padding for smaller screens */
+  .navbar {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

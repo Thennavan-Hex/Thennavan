@@ -44,29 +44,6 @@ lottie.loadAnimation({
   path: animationDataUrl,
 });
 
-// Text Animation
-async function init() {
-  const node = document.querySelector("#type-text");
-
-  await sleep(1000);
-  node.innerText = "";
-  await node.type("Interests: ");
-
-  while (true) {
-    await node.type("Web Development!");
-    await sleep(2000);
-    await node.delete("Web Development!");
-    await node.type("Mobile App Development!");
-    await sleep(2000);
-    await node.delete("Mobile App Development!");
-    await node.type("Data Science!");
-    await sleep(2000);
-    await node.delete("Data Science!");
-  }
-}
-
-
-
 // Source code 🚩
 
 const sleep = time => new Promise(resolve => setTimeout(resolve, time))
@@ -105,4 +82,17 @@ var secondAnimation = bodymovin.loadAnimation({
   loop: true,
   autoplay: true,
   path: 'https://assets8.lottiefiles.com/packages/lf20_hijdc45w/data.json' // URL for the second animation
+});
+
+//scroll
+
+window.addEventListener('scroll', function() {
+  var navbar = document.querySelector('.navbar');
+  var sticky = navbar.offsetTop;
+
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add('sticky');
+  } else {
+    navbar.classList.remove('sticky');
+  }
 });
